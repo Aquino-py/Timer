@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+
+    <div class="countdown-container">
+        <div class="countdown-el days-c">
+            <p class="big-text" id="days">0</p>
+            <span>dias</span>
+        </div>
+        <div class="countdown-el hours-c">
+            <p class="big-text" id="hours">0</p>
+            <span>horas</span>
+        </div>
+        <div class="countdown-el mins-c">
+            <p class="big-text" id="mins">0</p>
+            <span>min</span>
+        </div>
+        <div class="countdown-el seconds-c">
+            <p class="big-text" id="seconds">0</p>
+            <span>seg</span>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <div class="showModal">
+            <button type="button" onclick="showModal()">ALTERAR DATA</button>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAlterar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alterar data do timer</h5>
+                </div>
+                <div class="modal-body">
+                    <span class="modal-span">Título do timer</span>
+                    <input type="text" id="tituloInformado" />
+                    <span class="modal-span">Data do timer</span>
+                    <input type="date" id="dataInformada" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="alterarData()">Salvar mudanças</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1603382585507-45205571d760?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bW9udGFpbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: -14rem;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.big-text {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.showModal {
+    border: 2px;
+    border-color: black;
+}
+
+button {
+    font-size: 1.2rem;
+    color: white;
+    height: 2.5rem;
+    width: 11.5rem;
+    border-radius: 4px;
+    border: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2rem;
+}
+
+.modal-span {
+    margin-top: 2rem;
+}
+
+.modal {
+    margin-top: 12rem;
+}
